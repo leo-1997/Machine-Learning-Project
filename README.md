@@ -1,4 +1,18 @@
 # Machine-Learning-Project
+# Development
+Upon cloning, download the python packages by running: (for Linux)
+```
+cd Machine-Learning-Project
+python3 -m venv ./env
+env/bin/pip install -r requirements.txt
+``` 
+
+To create a new requirement file upon installing more packages, run: (on Linux)
+```
+cd Machine-Learning-Project
+env/bin/pip freeze > requirements.txt
+``` 
+
 # Arts Project
 
 # Motivation
