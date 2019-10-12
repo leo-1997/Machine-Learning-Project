@@ -10,6 +10,7 @@ env/bin/pip install -r requirements.txt
 To create a new requirement file upon installing more packages, run: (on Linux)
 ```
 cd Machine-Learning-Project
+env/bin/pip install pandas
 env/bin/pip freeze > requirements.txt
 ``` 
 
