@@ -1,11 +1,11 @@
 # import the necessary packages
+from pyimagesearch import config
 from sklearn.preprocessing import LabelEncoder
-#from keras.applications import VGG16
-from vgg16 import VGG16
+from keras.applications import VGG16
+# from vgg16 import VGG16
 from keras.applications import imagenet_utils
 from keras.preprocessing.image import img_to_array
 from keras.preprocessing.image import load_img
-from pyimagesearch import config
 from imutils import paths
 import numpy as np
 import pickle
@@ -38,6 +38,7 @@ for split in [config.TRAIN, config.TEST]:
 	# open the output CSV file for writing
 	csvPath = os.path.sep.join([config.BASE_CSV_PATH,
 		"{}.csv".format(split)])
+	print('csvPath', csvPath)
 	csv = open(csvPath, "w")
 
 	# loop over the images in batches
